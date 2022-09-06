@@ -1,7 +1,4 @@
-<div align="center">
-<img src="https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/96/fireworks_1f386.png"/>
-<h1>react-native-canvas</h1>
-</div>
+# react-native-canvas 🎇
 
 A Canvas component for React Native
 
@@ -11,11 +8,11 @@ react-native link react-native-webview
 npm install react-native-canvas
 ```
 
-### Usage
+## Usage
 
-```JSX
+```TSX
 import React, { Component } from 'react';
-import Canvas from 'react-native-canvas';
+import Canvas from '@eugnehp/react-native-canvas';
 
 class App extends Component {
 
@@ -33,27 +30,27 @@ class App extends Component {
 }
 ```
 
-### API
+## API
 
-#### Canvas
+### Canvas
 
-###### Canvas#height
+#### Canvas#height
 
 Reflects the height of the canvas in pixels
 
-###### Canvas#width
+#### Canvas#width
 
 Reflects the width of the canvas in pixels
 
-###### Canvas#getContext()
+#### Canvas#getContext()
 
 Returns a canvas rendering context. Currently only supports 2d context.
 
-###### Canvas#toDataURL()
+#### Canvas#toDataURL()
 
 Returns a `Promise` that resolves to DataURL.
 
-#### CanvasRenderingContext2D
+### CanvasRenderingContext2D
 
 Standard CanvasRenderingContext2D. [MDN](https://developer.mozilla.org/en/docs/Web/API/CanvasRenderingContext2D). Only difference is `await` should be used to retrieve values from methods.
 
@@ -61,7 +58,7 @@ Standard CanvasRenderingContext2D. [MDN](https://developer.mozilla.org/en/docs/W
 const ctx = canvas.getContext('2d');
 ```
 
-#### Image
+## Image
 
 WebView Image constructor. Unlike in the browsers accepts canvas as first argument. [MDN](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)
 

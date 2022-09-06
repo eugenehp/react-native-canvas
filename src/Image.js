@@ -1,4 +1,3 @@
-import Canvas from './Canvas';
 import {webviewConstructor, webviewProperties, webviewEvents} from './webview-binders';
 
 @webviewProperties({crossOrigin: undefined, height: undefined, src: undefined, width: undefined})
@@ -6,7 +5,7 @@ import {webviewConstructor, webviewProperties, webviewEvents} from './webview-bi
 @webviewConstructor('Image')
 export default class Image {
   constructor(canvas, width, height, noOnConstruction) {
-    if (!(canvas instanceof Canvas)) {
+    if ((canvas.type !== 'RNCanvas')) {
       throw new Error('Image must be initialized with a Canvas instance');
     }
     this.canvas = canvas;

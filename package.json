@@ -1,7 +1,7 @@
 {
-  "name": "react-native-canvas",
+  "name": "@ehp/react-native-canvas",
   "license": "MIT",
-  "version": "0.1.38",
+  "version": "0.1.39",
   "main": "dist/Canvas",
   "scripts": {
     "build": "babel src --out-dir dist --copy-files --compact false && node bundle-html.js ./dist/index.html",
@@ -13,6 +13,7 @@
     "@babel/cli": "7.0.0-beta.47",
     "@babel/core": "7.0.0-beta.47",
     "@babel/plugin-proposal-decorators": "7.0.0-beta.47",
+    "babel-cli": "^6.26.0",
     "babel-preset-react-native": "^5.0.2",
     "eslint": "^4",
     "eslint-config-fbjs-opensource": "^1.0.0",
@@ -22,7 +23,7 @@
   "dependencies": {
     "ctx-polyfill": "^1.1.4"
   },
-  "repository": "https://github.com/iddan/react-native-canvas",
+  "repository": "https://github.com/eugenehp/react-native-canvas",
   "peerDependencies": {
     "react-native-webview": ">=5.10.0 || >=6.1.0"
   }

@@ -29,6 +29,7 @@ const stylesheet = StyleSheet.create({
 @webviewProperties({width: 300, height: 150})
 @webviewMethods(['toDataURL'])
 export default class Canvas extends Component {
+  type = 'RNCanvas';
 
   state = {
     isLoaded: false,
